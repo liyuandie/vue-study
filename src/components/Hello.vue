@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
-    {{message}}
-    <button v-on: click="reverseMessage">反转消息</button>
+    <input v-model='message'>
+    <p> {{message}}</p>
+    <button @click="reverse">反转文字</button>
+    <my-component></my-component>
   </div>
 </template>
 
@@ -14,7 +16,7 @@ export default {
     }
   },
   methods: {
-    reverseMessage: function () {
+    reverse: function () {
       this.message = this.message.split('').reverse().join('')
     }
   }
