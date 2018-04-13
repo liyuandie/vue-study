@@ -12,7 +12,7 @@ Vue.component('my-component', {
 // 局部注册
 
 const Child = {
-  template: '<div>A custom component!!!!!</div>'
+  template: '<div>A custom component!!!</div>'
 }
 /* eslint-disable no-new */
 new Vue({
